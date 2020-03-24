@@ -3,21 +3,26 @@
     font-style: normal;
     font-weight: 400;
     src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-  }
+}
   
-  .header {
+.header {
     max-width: 1366px;
+    min-width: 1024px;
     margin: 20px auto;
+    padding: 20px 20px;
     margin-bottom: 40px;
     position: sticky;
-    top: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.logo {
+    margin-left: 150px;
+}
+
 .nav a {
-    padding: 10px 20px;
+    padding: 20px 20px;
     font-size: 20px;
     margin: 60px;
     font-family: 'Product Sans', sans-serif;
@@ -26,9 +31,19 @@
     color: black;
 }
 
+
 .nav a:hover,
 .nav a:active {
     font-weight: 900;
     border-bottom: 5px solid red;
     transition: all 0.3s ease-out;
+}
+
+.main {
+    max-width: 1366px;
+    min-width: 1024px;
+}
+
+#photo {
+    padding: 100px 200px;
 }
