@@ -7,8 +7,7 @@
   
 .header {
     max-width: 1366px;
-    min-width: 1024px;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 20px 20px;
     margin-bottom: 40px;
     position: sticky;
@@ -18,13 +17,14 @@
 }
 
 .logo {
-    margin-left: 150px;
+    margin: 0px 0px 0px 21%;
 }
 
+
 .nav a {
-    padding: 20px 20px;
-    font-size: 20px;
-    margin: 60px;
+    padding: 18px 15px;
+    font-size: 24px;
+    margin: 70px;
     font-family: 'Product Sans', sans-serif;
     font-weight: 500;
     text-decoration: none;
@@ -34,16 +34,36 @@
 
 .nav a:hover,
 .nav a:active {
-    font-weight: 900;
-    border-bottom: 5px solid red;
-    transition: all 0.3s ease-out;
+    position: static;
+    background-color: red;
+    border-radius: 5px;
+    color:White;
+    padding: 10px 15px;
+    transition: all 0.5s ease-in;
+    text-decoration: none;
 }
 
 .main {
     max-width: 1366px;
-    min-width: 1024px;
 }
 
 #photo {
-    padding: 100px 200px;
+    padding: 60px 0px 100px 20%;
+    float: left;
+}
+
+.textbox {
+    width: 180px;
+    height: 45px;
+    background-color: red;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 12px 12px ;
+    border-radius: 10px;
+    float: left;
+    margin: 200px auto auto 65px;
 }
