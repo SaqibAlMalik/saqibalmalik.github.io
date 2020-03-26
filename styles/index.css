@@ -1,69 +1,89 @@
 @font-face {
-    font-family: 'Product Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    font-family: "Product Sans";
+    src: url('https://fonts.gstatic.com/s/productsans/v7/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2') format('woff2');
+  }
+
+body {
+    max-width: 1920px;
+    overflow: hidden;
 }
-  
+
 .header {
-    max-width: 1366px;
-    margin: 30px auto;
-    padding: 20px 20px;
-    margin-bottom: 40px;
+    background-color: white;
+    max-width: 1920px;
+    padding: 10px 18% 10px 20%;
+    margin: 20px 0px;
     position: sticky;
+    top: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo {
-    margin: 0px 0px 0px 21%;
+    margin-left: 12%;
 }
 
-
-.nav a {
-    padding: 18px 15px;
+.navi a {
+    padding: 15px 10px;
+    margin-left: 150px;
     font-size: 24px;
-    margin: 70px;
-    font-family: 'Product Sans', sans-serif;
+    font-family: "Product Sans";
     font-weight: 500;
     text-decoration: none;
     color: black;
 }
 
-
-.nav a:hover,
-.nav a:active {
+.navi a:hover,
+.navi a:active {
     position: static;
     background-color: red;
     border-radius: 5px;
     color:White;
-    padding: 10px 15px;
+    padding: 10px 10px;
     transition: all 0.5s ease-in;
     text-decoration: none;
 }
 
-.main {
-    max-width: 1366px;
-}
-
 #photo {
-    padding: 60px 0px 100px 20%;
+    padding: 4% 0px 10% 15%;
     float: left;
+    border-radius: 5px solid red;
 }
 
 .textbox {
-    width: 180px;
-    height: 45px;
-    background-color: red;
+    width: 250;
+    height: 65;
+    background-color: rgb(53, 53, 53);
     font-family: 'Product Sans', sans-serif;
     font-weight: bolder;
-    font-size: 35px;
+    font-size: 38px;
     text-decoration: none;
     color: white;
-    text-align: center;
-    padding: 12px 12px ;
+    padding: 14px 18px ;
     border-radius: 10px;
-    float: left;
-    margin: 200px auto auto 65px;
+    position: absolute;
+    margin: 8% auto 60% 51%;
+}
+
+.text {
+    font-family: 'Product Sans', sans-serif;
+    font-weight: normal;
+    -webkit-text-stroke: red 2px;
+    font-size: 75px;
+    text-decoration: none;
+    color: red;
+    position: absolute;
+    margin: 12% auto 60% 51%;
+
+}
+
+.textSmall {
+    font-family: 'Product Sans', sans-serif;
+    font-weight: bold;
+    font-size: 31px;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    margin: 17% auto 60% 51%;
 }
