@@ -1,4 +1,4 @@
-}@font-face {
+@font-face {
     font-family: "Product Sans";
     src: url('https://fonts.gstatic.com/s/productsans/v7/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2') format('woff2');
   }
@@ -25,7 +25,7 @@ body {
 }
 
 .navi a {
-    padding: 15px 10px;
+    padding: 10px 10px;
     margin-left: 150px;
     font-size: 23px;
     font-family: "Product Sans";
