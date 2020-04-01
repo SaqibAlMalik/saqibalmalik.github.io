@@ -3,185 +3,34 @@
     src: url('https://fonts.gstatic.com/s/productsans/v7/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2') format('woff2');
   }
 
-body {
-    max-width: 1920px;
-    overflow: hidden;
-}
-
 .header {
-    background-color: white;
-    max-width: 1920px;
-    padding: 10px 18% 10px 20%;
-    margin: 20px 0px;
-    position: sticky;
-    top: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  margin-top: 20px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 2fr 150px 1fr 150px 150px 150px 2fr ;
 }
 
-.logo {
-    margin-left: 12%;
+a {
+  display: grid;
+  text-decoration: none;
+  font-family: "Product Sans";
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  justify-content: center;
 }
 
-.navi a {
-    padding: 10px 10px;
-    margin-left: 150px;
-    font-size: 23px;
-    font-family: "Product Sans";
-    font-weight: 500;
-    text-decoration: none;
-    color: black;
-    -webkit-text-stroke: 0.6px black ;
+.hi {
+  align-items: center;
 }
 
-.navi a:hover,
-.navi a:active {
-    position: static;
-    background-color: rgb(231, 48, 2);
-    border-radius: 15px;
-    color:White;
-    -webkit-text-stroke: 0.6px white ;
-    padding: 10px 10px;
-    transition: all 0.5s ease-in;
-    text-decoration: none;
+.nav {
+  display: flex;
+  padding: 10px;
 }
 
-#photo {
-    padding: 4% 0px 10% 15%;
-    float: left;
-    border-radius: 5px solid red;
+.nav:hover {
+  background-color: red;
+  border-radius: 5px;
+  font: white;
 }
-
-.textbox {
-    width: 250;
-    height: 65;
-    background-color: rgb(53, 53, 53);
-    font-family: 'Product Sans', sans-serif;
-    font-weight: bolder;
-    font-size: 38px;
-    text-decoration: none;
-    color: white;
-    padding: 14px 18px ;
-    border-radius: 10px;
-    position: absolute;
-    margin: 10% auto 60% 51%;
-}
-
-.text {
-    font-family: 'Product Sans', sans-serif;
-    font-weight: normal;
-    -webkit-text-stroke: rgb(231, 48, 2) 2px;
-    font-size: 75px;
-    text-decoration: none;
-    color: rgb(231, 48, 2);
-    position: absolute;
-    margin: 14% auto 60% 51%;
-
-}
-
-.textSmall {
-    font-family: 'Product Sans', sans-serif;
-    font-weight: 500;
-    font-size: 31px;
-    -webkit-text-stroke: black 0.5px;
-    text-decoration: none;
-    color: black;
-    position: absolute;
-    margin: 19% auto 60% 51%;
-}
-
-.social-btns .btn,
-.social-btns .btn:before,
-.social-btns .btn .fab {
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
-  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
-          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
-}
-.social-btns .btn:before {
-  top: 90%;
-  left: -110%;
-}
-.social-btns .btn .fab {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-}
-.social-btns .btn.linkedin-in:before {
-  background-color: #0e76a8;
-}
-.social-btns .btn.linkedin-in .fab {
-  color: #0e76a8;
-}
-.social-btns .btn.twitter:before {
-  background-color: #3cf;
-}
-.social-btns .btn.twitter .fab {
-  color: #3cf;
-}
-.social-btns .btn.instagram:before {
-  background-color: #eb3102;
-}
-.social-btns .btn.instagram .fab {
-  color: #dc4a38;
-}
-.social-btns .btn.behance:before {
-  background-color: #053eff;
-}
-.social-btns .btn.behance .fab {
-  color: #053eff;
-}
-.social-btns .btn.github:before {
-  background-color: #171515;
-}
-.social-btns .btn.github .fab {
-  color: #171515;
-}
-.social-btns .btn:focus:before,
-.social-btns .btn:hover:before {
-  top: -10%;
-  left: -10%;
-}
-.social-btns .btn:focus .fab,
-.social-btns .btn:hover .fab {
-  color: #fff;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-.social-btns {
-  height: 90px;
-  margin: 32% auto auto 33%;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.social-btns .btn {
-  display: inline-block;
-  background-color: #fff;
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
-  margin: 0 28px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  border-radius: 28%;
-  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
-  opacity: 0.99;
-}
-.social-btns .btn:before {
-  content: '';
-  width: 120%;
-  height: 120%;
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.social-btns .btn .fab {
-  font-size: 45px;
-  vertical-align: middle;
-}
-
