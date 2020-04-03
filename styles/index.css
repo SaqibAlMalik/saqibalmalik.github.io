@@ -1,36 +1,199 @@
 @font-face {
-    font-family: "Product Sans";
-    src: url('https://fonts.gstatic.com/s/productsans/v7/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2') format('woff2');
-  }
+  font-family: "Product Sans";
+  src: url('https://fonts.gstatic.com/s/productsans/v7/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2') format('woff2');
+}
 
+body {
+  overflow: hidden;
+}
+
+        /* Header Start */
 .header {
-  margin-top: 20px;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 2fr 150px 1fr 150px 150px 150px 2fr ;
+display: grid;
+position: sticky;
+}
+
+.navi {
+display: grid;
+grid-auto-flow: column;
+grid-template-columns: 4fr 500px 1fr 150px 150px 150px 5fr ;
+align-items: center;
+grid-gap: 60px;
 }
 
 a {
-  display: grid;
-  text-decoration: none;
-  font-family: "Product Sans";
-  font-weight: 600;
-  font-size: 20px;
-  color: black;
-  justify-content: center;
+text-decoration: none;
+font-family: "Product Sans";
+font-weight: 600;
+font-size: 25px;
+color: black;
 }
 
-.hi {
-  align-items: center;
+.logo {
+text-align: center;
+padding: 20px;
 }
 
 .nav {
-  display: flex;
-  padding: 10px;
+text-align: center;
+padding: 20px;
+
 }
 
 .nav:hover {
-  background-color: red;
-  border-radius: 5px;
-  font: white;
+  background-color: rgb(231, 48, 2);
+  border-radius: 15px;
+  color:White;
+  -webkit-text-stroke: 0.6px white ;
+  padding: 15px 20px 15px 20px;
+  transition: all 0.5s ease-in;
+  text-decoration: none;
+}
+
+        /*  Header End */
+
+
+        /* Main Content Start */
+.content {
+  display: grid;
+}
+
+.main {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 6fr 500px 2fr 520px 8fr ;
+  grid-template-rows: 500px ;
+  align-items: center;
+  grid-column-gap: 60px;
+  margin-top: 8vh;
+}
+
+.photo {
+  grid-column: 2 / span auto;
+}
+
+.text {
+  display: grid;
+  grid-auto-flow: row;
+  
+}
+
+.l1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Product Sans";
+  background-color: rgb(231, 48, 2);
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  width: max-content;
+}
+
+.l2 {
+  font-family: "Product Sans";
+  font-weight: 900;
+  font-size: 63px;
+  margin: 5px 0 5px 0;
+}
+
+.l3 {
+  font-family: "Product Sans";
+  font-weight: 500;
+  font-size: 29px;
+}
+
+        /* Start Social Buttons */
+
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fab {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fab {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.social-btns .btn.linkedin-in:before {
+  background-color: #0e76a8;
+}
+.social-btns .btn.linkedin-in .fab {
+  color: #0e76a8;
+}
+.social-btns .btn.twitter:before {
+  background-color: #3cf;
+}
+.social-btns .btn.twitter .fab {
+  color: #3cf;
+}
+.social-btns .btn.instagram:before {
+  background-color: #eb3102;
+}
+.social-btns .btn.instagram .fab {
+  color: #dc4a38;
+}
+.social-btns .btn.behance:before {
+  background-color: #053eff;
+}
+.social-btns .btn.behance .fab {
+  color: #053eff;
+}
+.social-btns .btn.github:before {
+  background-color: #171515;
+}
+.social-btns .btn.github .fab {
+  color: #171515;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fab,
+.social-btns .btn:hover .fab {
+  color: #fff;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.social-btns {
+
+  height: 90px;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  margin: 0 14px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  opacity: 0.99;
+}
+.social-btns .btn:before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.social-btns .btn .fab {
+  font-size: 45px;
+  vertical-align: middle;
 }
